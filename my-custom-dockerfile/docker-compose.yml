@@ -1,0 +1,9 @@
+services:
+  filebrowser:
+    image: ghcr.io/alexandrephilibert/my-custom-dockerfile:v3.0
+    platform: linux/amd64
+    ports:
+      - "8080:5000"
+    volumes:
+      - ./my-data:/app/data
+      - ./my-config:/app/config
